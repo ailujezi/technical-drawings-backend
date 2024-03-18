@@ -1,0 +1,33 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.1'
+	id 'io.spring.dependency-management' version '1.1.4'
+	id 'io.freefair.lombok' version "8.4"
+}
+
+group = 'com.ritzjucy'
+version = '0.0.1'
+
+java {
+	sourceCompatibility = '21'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
+
+	implementation 'com.google.guava:guava:33.0.0-jre'
+
+	implementation 'org.flywaydb:flyway-core'
+	runtimeOnly 'com.h2database:h2:2.2.220'
+
+	implementation 'net.sourceforge.tess4j:tess4j:5.10.0'
+
+	implementation 'io.jsonwebtoken:jjwt:0.12.3'
+}
