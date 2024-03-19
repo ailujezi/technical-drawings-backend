@@ -7,9 +7,12 @@ You can use the "Technical Drawings Frontend" Angular frontend application for t
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-- JDK 21 or later
+- JDK 21 or later installed
+- Tesseract OCR Engine installed
 
 You can use any JDK build, e.g. Temurin: https://adoptium.net/de/temurin/releases/
+
+To install Tesseract, follow the instructions on https://tesseract-ocr.github.io/tessdoc/Installation.html
 
 ## Project Setup
 Once you have the prerequisites installed, you can set up the project on your local machine.
